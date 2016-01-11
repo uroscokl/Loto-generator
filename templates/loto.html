@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %} Vase stevilke {% endblock title %}
+
+{% block vsebina %}
+<div id="wrapper">
+    <div class="content">
+        <p>Vaša loto kombinacija je:</p>
+        <div class="num">
+            <div class="ball">
+                {% if num %} <p>{{num[0]}}</p> {% endif %} </div>
+            <div class="ball">
+                {% if num %} <p>{{num[1]}}</p> {% endif %} </div>
+            <div class="ball">
+                {% if num %} <p>{{num[2]}}</p> {% endif %} </div>
+            <div class="ball">
+                {% if num %} <p>{{num[3]}}</p> {% endif %} </div>
+            <div class="ball">
+                {% if num %} <p>{{num[4]}}</p> {% endif %} </div>
+            <div class="ball">
+                {% if num %} <p>{{num[5]}}</p> {% endif %} </div>
+            <div class="ball">
+                {% if num %} <p>{{num[6]}}</p> {% endif %} </div>
+        </div>
+        <a class="btn" href="/loto">Ponovno generiraj</a>
+        <br> <br>
+        <a class="link" href="/">nazaj na prvo stran</a>
+    </div>
+</div>
+{% endblock vsebina %}
